@@ -17,18 +17,18 @@ const Home = () => {
     <div className="pt-16 sm:pt-20">
       {/* Hero Section */}
       <section 
-        className="relative flex items-center overflow-hidden" 
+        className="relative flex items-start overflow-hidden" 
         style={{ 
-          height: 'calc(100vh - 5rem)', 
-          minHeight: '600px',
+          minHeight: '85vh',
+          paddingTop: 'clamp(2rem, 5vh, 4rem)',
           backgroundImage: `url(${aiHeadBg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'right center',
           backgroundRepeat: 'no-repeat'
         }}
       >
-        <div className="container mx-auto z-10 h-full flex items-center">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full items-center">
+        <div className="container mx-auto z-10 flex items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full items-start">
             {/* Left Column - Content */}
             <div className="flex flex-col gap-6 max-w-2xl">
               <div className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 w-fit px-5 py-2.5">
@@ -42,9 +42,7 @@ const Home = () => {
                   <br />
                   <span className="text-foreground">Automate. Amplify</span>
                   <br />
-                  <span className="text-transparent bg-clip-text" style={{ 
-                    backgroundImage: 'linear-gradient(135deg, hsl(270 80% 65%), hsl(193 100% 55%))'
-                  }}>with AI-Driven IT Strategy</span>
+                  <span className="text-primary font-semibold">with AI-Driven IT Strategy</span>
                 </h1>
                 
                 <p className="text-foreground" style={{ fontSize: 'clamp(0.9rem, 0.8rem + 0.4vw, 1rem)' }}>
@@ -91,8 +89,8 @@ const Home = () => {
         <div className="container mx-auto z-10 relative">
           <div className="max-w-6xl mx-auto" style={{ display: 'flex', flexDirection: 'column', gap: 'clamp(2rem, 5vw, 4rem)' }}>
             <div className="text-center" style={{ display: 'flex', flexDirection: 'column', gap: 'clamp(0.75rem, 2vw, 1.5rem)' }}>
-              <h2 className="font-bold" style={{ fontSize: 'clamp(2rem, 4vw + 1rem, 4rem)' }}>
-                <span className="glow-cyan">What We Do</span>
+              <h2 className="font-bold text-foreground" style={{ fontSize: 'clamp(2rem, 4vw + 1rem, 4rem)' }}>
+                What We Do
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto" style={{ fontSize: 'clamp(1rem, 1vw + 0.5rem, 1.25rem)' }}>
                 Explore the core ways we partner with organisations
@@ -105,8 +103,8 @@ const Home = () => {
                 return (
                   <Link key={index} to="/services">
                     <div className="glass-card rounded-2xl hover:scale-105 transition-all duration-300 group cursor-pointer h-full" style={{ padding: 'clamp(1.5rem, 3vw, 2rem)' }}>
-                      <Icon style={{ width: 'clamp(2rem, 5vw, 3rem)', height: 'clamp(2rem, 5vw, 3rem)', marginBottom: 'clamp(0.75rem, 1.5vw, 1rem)' }} className="text-primary group-hover:animate-pulse-glow" />
-                      <h3 className="font-bold glow-cyan" style={{ fontSize: 'clamp(1rem, 1vw + 0.5rem, 1.25rem)', marginBottom: 'clamp(0.5rem, 1vw, 0.75rem)' }}>{service.title}</h3>
+                      <Icon style={{ width: 'clamp(2rem, 5vw, 3rem)', height: 'clamp(2rem, 5vw, 3rem)', marginBottom: 'clamp(0.75rem, 1.5vw, 1rem)' }} className="text-primary transition-transform group-hover:scale-110" />
+                      <h3 className="font-bold text-foreground" style={{ fontSize: 'clamp(1rem, 1vw + 0.5rem, 1.25rem)', marginBottom: 'clamp(0.5rem, 1vw, 0.75rem)' }}>{service.title}</h3>
                       <p className="text-muted-foreground" style={{ fontSize: 'clamp(0.875rem, 0.8rem + 0.375vw, 1rem)' }}>{service.description}</p>
                     </div>
                   </Link>
@@ -121,8 +119,8 @@ const Home = () => {
       <section className="relative overflow-hidden" style={{ padding: 'clamp(3rem, 8vw, 8rem) 0' }}>
         <div className="container mx-auto z-10 relative">
           <div className="max-w-4xl mx-auto text-center" style={{ display: 'flex', flexDirection: 'column', gap: 'clamp(1.5rem, 3vw, 2rem)' }}>
-            <h2 className="font-bold" style={{ fontSize: 'clamp(2rem, 4vw + 1rem, 4rem)' }}>
-              <span className="glow-cyan-subtle">Why Choose Us</span>
+            <h2 className="font-bold text-foreground" style={{ fontSize: 'clamp(2rem, 4vw + 1rem, 4rem)' }}>
+              Why Choose Us
             </h2>
             <p className="text-muted-foreground" style={{ fontSize: 'clamp(1rem, 1vw + 0.5rem, 1.25rem)' }}>
               Strategy-first, AI-embedded, outcome-driven. We don't just build technology — we define why and how it aligns to your market, your customers and your growth path.
@@ -141,7 +139,7 @@ const Home = () => {
       <section className="relative overflow-hidden" style={{ padding: 'clamp(3rem, 8vw, 8rem) 0' }}>
         <div className="container mx-auto z-10 relative">
           <div className="max-w-4xl mx-auto text-center" style={{ display: 'flex', flexDirection: 'column', gap: 'clamp(2rem, 4vw, 3rem)' }}>
-            <h3 className="font-bold glow-cyan" style={{ fontSize: 'clamp(1.25rem, 1.5vw + 0.5rem, 1.75rem)' }}>Trusted by Industry Leaders</h3>
+            <h3 className="font-bold text-foreground" style={{ fontSize: 'clamp(1.25rem, 1.5vw + 0.5rem, 1.75rem)' }}>Trusted by Industry Leaders</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 opacity-50" style={{ gap: 'clamp(1rem, 2vw, 2rem)' }}>
               {[1, 2, 3, 4].map((i) => (
                 <div key={i} className="glass-card rounded-xl flex items-center justify-center" style={{ padding: 'clamp(1rem, 2vw, 1.5rem)' }}>
@@ -158,10 +156,10 @@ const Home = () => {
         <div className="container mx-auto z-10 relative">
           <div className="max-w-4xl mx-auto">
             <div className="glass-card rounded-3xl text-center" style={{ padding: 'clamp(2rem, 5vw, 4rem)', display: 'flex', flexDirection: 'column', gap: 'clamp(1.5rem, 3vw, 2rem)' }}>
-              <h2 className="font-bold" style={{ fontSize: 'clamp(2rem, 4vw + 1rem, 4rem)' }}>
-                <span className="glow-cyan">Ready to Start</span>
+              <h2 className="font-bold text-foreground" style={{ fontSize: 'clamp(2rem, 4vw + 1rem, 4rem)' }}>
+                Ready to Start
                 <br />
-                <span className="glow-cyan-subtle">Your Transformation?</span>
+                Your Transformation?
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto" style={{ fontSize: 'clamp(1rem, 1vw + 0.5rem, 1.25rem)' }}>
                 Let's discuss how OpenStrategyAI can accelerate your journey to AI-powered excellence
