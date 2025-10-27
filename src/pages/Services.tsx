@@ -150,7 +150,7 @@ const Services = () => {
                     <div className="flex items-center gap-4">
                       <Icon className="w-16 h-16 text-primary animate-pulse-glow" />
                       <div>
-                        <h2 className="text-3xl md:text-5xl font-bold glow-cyan">{service.title}</h2>
+                        <h2 className="text-3xl md:text-5xl font-bold text-foreground">{service.title}</h2>
                         <p className="text-xl text-muted-foreground mt-2">{service.headline}</p>
                       </div>
                     </div>
@@ -161,7 +161,7 @@ const Services = () => {
 
                     <div className="grid md:grid-cols-2 gap-8 pt-8">
                       <div className="space-y-4">
-                        <h3 className="text-2xl font-bold glow-purple">What We Deliver</h3>
+                        <h3 className="text-2xl font-bold text-foreground">What We Deliver</h3>
                         <ul className="space-y-3">
                           {service.deliverables.map((item, i) => (
                             <li key={i} className="flex items-start gap-3">
@@ -173,7 +173,7 @@ const Services = () => {
                       </div>
 
                       <div className="space-y-4">
-                        <h3 className="text-2xl font-bold glow-cyan">Benefits</h3>
+                        <h3 className="text-2xl font-bold text-foreground">Benefits</h3>
                         <ul className="space-y-3">
                           {service.benefits.map((item, i) => (
                             <li key={i} className="flex items-start gap-3">

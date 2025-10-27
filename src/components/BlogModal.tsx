@@ -63,7 +63,7 @@ export const BlogModal = ({ post, isOpen, onClose }: BlogModalProps) => {
                 </div>
               </div>
 
-              <h1 className="text-3xl md:text-4xl font-bold leading-tight glow-cyan">
+              <h1 className="text-3xl md:text-4xl font-bold leading-tight text-foreground">
                 {post.title}
               </h1>
 
@@ -96,7 +96,7 @@ export const BlogModal = ({ post, isOpen, onClose }: BlogModalProps) => {
               {/* Sections */}
               {post.content.sections.map((section, index) => (
                 <div key={index} className="mb-8">
-                  <h2 className="text-2xl font-bold mb-4 glow-purple">
+                  <h2 className="text-2xl font-bold mb-4 text-foreground">
                     {section.heading}
                   </h2>
                   {section.paragraphs.map((paragraph, pIndex) => (
@@ -109,7 +109,7 @@ export const BlogModal = ({ post, isOpen, onClose }: BlogModalProps) => {
 
               {/* Conclusion */}
               <div className="mb-8">
-                <h2 className="text-2xl font-bold mb-4 glow-cyan">Conclusion</h2>
+                <h2 className="text-2xl font-bold mb-4 text-foreground">Conclusion</h2>
                 <p className="text-base leading-relaxed text-foreground/80">
                   {post.content.conclusion}
                 </p>
@@ -130,11 +130,11 @@ export const BlogModal = ({ post, isOpen, onClose }: BlogModalProps) => {
 
               {/* CTA */}
               <div className="mt-12 p-6 rounded-2xl glass-card border border-primary/20 text-center space-y-4">
-                <h3 className="text-xl font-bold glow-purple">Need Expert Guidance?</h3>
+                <h3 className="text-xl font-bold text-foreground">Need Expert Guidance?</h3>
                 <p className="text-muted-foreground">
                   OpenStrategyAI can help you implement these strategies in your organization.
                 </p>
-                <Button variant="neon" size="lg" onClick={onClose}>
+                <Button variant="default" size="lg" onClick={onClose}>
                   Get in Touch
                 </Button>
               </div>

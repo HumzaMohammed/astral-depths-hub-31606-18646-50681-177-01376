@@ -43,8 +43,8 @@ const WhyUs = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto space-y-16">
             <div className="text-center space-y-4">
-              <h2 className="text-4xl md:text-6xl font-bold">
-                <span className="glow-purple">What Sets Us Apart</span>
+              <h2 className="text-4xl md:text-6xl font-bold text-foreground">
+                What Sets Us <span className="text-primary">Apart</span>
               </h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                 Our unique approach to technology transformation
@@ -56,8 +56,8 @@ const WhyUs = () => {
                 const Icon = item.icon;
                 return (
                   <div key={index} className="glass-card p-8 rounded-2xl hover:scale-105 transition-all duration-300 group">
-                    <Icon className="w-12 h-12 mb-4 text-primary group-hover:animate-pulse-glow" />
-                    <h3 className="text-xl font-bold mb-3 glow-cyan">{item.title}</h3>
+                    <Icon className="w-12 h-12 mb-4 text-primary transition-transform group-hover:scale-110" />
+                    <h3 className="text-xl font-bold mb-3 text-foreground">{item.title}</h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">{item.description}</p>
                   </div>
                 );
@@ -71,7 +71,7 @@ const WhyUs = () => {
       <section className="relative py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto glass-card p-12 rounded-3xl space-y-8">
-            <h2 className="text-4xl font-bold glow-cyan text-center">Our Proven Process</h2>
+            <h2 className="text-4xl font-bold text-foreground text-center">Our Proven Process</h2>
             
             <div className="grid md:grid-cols-4 gap-6">
               {[
@@ -82,7 +82,7 @@ const WhyUs = () => {
               ].map((phase, i) => (
                 <div key={i} className="text-center space-y-3">
                   <div className="w-16 h-16 mx-auto rounded-full glass-card flex items-center justify-center">
-                    <span className="text-2xl font-bold glow-purple">{phase.step}</span>
+                    <span className="text-2xl font-bold text-primary">{phase.step}</span>
                   </div>
                   <h3 className="font-bold text-lg">{phase.title}</h3>
                   <p className="text-sm text-muted-foreground">{phase.desc}</p>
@@ -105,7 +105,7 @@ const WhyUs = () => {
                 { value: "24/7", label: "Support Available" }
               ].map((stat, i) => (
                 <div key={i} className="glass-card p-6 rounded-2xl text-center">
-                  <div className="text-3xl md:text-4xl font-bold glow-cyan mb-2">{stat.value}</div>
+                  <div className="text-3xl md:text-4xl font-bold text-primary mb-2">{stat.value}</div>
                   <div className="text-sm text-muted-foreground">{stat.label}</div>
                 </div>
               ))}
@@ -118,23 +118,23 @@ const WhyUs = () => {
       <section className="relative py-24 overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto glass-card p-12 rounded-3xl text-center space-y-8">
-            <h2 className="text-4xl md:text-5xl font-bold">
-              <span className="glow-cyan">Ready to Experience</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+              Ready to Experience
               <br />
-              <span className="glow-purple">The Difference?</span>
+              The <span className="text-primary">Difference?</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               See how we can support your transformation journey
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/services">
-                <Button variant="glow" size="lg" className="text-base group">
+                <Button variant="outline" size="lg" className="text-base group">
                   Explore Our Services
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
               <Link to="/contact">
-                <Button variant="neon" size="lg" className="text-base">
+                <Button variant="default" size="lg" className="text-base">
                   Contact Us
                 </Button>
               </Link>

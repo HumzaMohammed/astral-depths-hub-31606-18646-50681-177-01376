@@ -82,7 +82,7 @@ const Contact = () => {
               </Card>
 
               <div className="glass-card p-6 rounded-2xl">
-                <h3 className="font-bold mb-4 glow-cyan">Office Hours</h3>
+                <h3 className="font-bold mb-4 text-foreground">Office Hours</h3>
                 <div className="space-y-2 text-sm text-muted-foreground">
                   <p>Monday - Friday: 9:00 - 18:00</p>
                   <p>Saturday - Sunday: Closed</p>
@@ -94,7 +94,7 @@ const Contact = () => {
             <div className="lg:col-span-2">
               <Card className="glass-card border-border/30">
                 <CardHeader>
-                  <CardTitle className="text-3xl glow-purple">Schedule Your Free Strategy Call</CardTitle>
+                  <CardTitle className="text-3xl text-foreground">Schedule Your Free Strategy Call</CardTitle>
                   <p className="text-muted-foreground">
                     Whether you're at the strategy stage or ready to act — talk to our team
                   </p>
@@ -182,7 +182,7 @@ const Contact = () => {
                       />
                     </div>
 
-                    <Button type="submit" variant="neon" size="lg" className="w-full text-base">
+                    <Button type="submit" variant="default" size="lg" className="w-full text-base">
                       <Send className="w-5 h-5" />
                       Send Message
                     </Button>
@@ -200,15 +200,15 @@ const Contact = () => {
           <div className="max-w-4xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="glass-card p-8 rounded-2xl text-center">
-                <div className="text-3xl font-bold glow-cyan mb-2">24/7</div>
+                <div className="text-3xl font-bold text-primary mb-2">24/7</div>
                 <div className="text-sm text-muted-foreground">Support Available</div>
               </div>
               <div className="glass-card p-8 rounded-2xl text-center">
-                <div className="text-3xl font-bold glow-purple mb-2">Global</div>
+                <div className="text-3xl font-bold text-primary mb-2">Global</div>
                 <div className="text-sm text-muted-foreground">Coverage</div>
               </div>
               <div className="glass-card p-8 rounded-2xl text-center">
-                <div className="text-3xl font-bold glow-cyan mb-2">Instant</div>
+                <div className="text-3xl font-bold text-primary mb-2">Instant</div>
                 <div className="text-sm text-muted-foreground">Response Time</div>
               </div>
             </div>
