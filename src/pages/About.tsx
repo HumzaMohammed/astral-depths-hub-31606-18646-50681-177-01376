@@ -41,13 +41,13 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
             <div className="glass-card p-8 rounded-2xl space-y-4">
-              <h2 className="text-3xl font-bold text-foreground">Our Mission</h2>
+              <h2 className="text-3xl font-bold glow-cyan">Our Mission</h2>
               <p className="text-muted-foreground">
                 To empower organisations with strategic, future-proof IT and AI solutions that drive growth, simplify operations and build resilience.
               </p>
             </div>
             <div className="glass-card p-8 rounded-2xl space-y-4">
-              <h2 className="text-3xl font-bold text-foreground">Our Vision</h2>
+              <h2 className="text-3xl font-bold glow-purple">Our Vision</h2>
               <p className="text-muted-foreground">
                 A world where technology is more than a support function — it's a growth engine. Where IT strategy, data intelligence and AI transformation are at the heart of every business plan.
               </p>
@@ -60,7 +60,7 @@ const About = () => {
       <section className="relative py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto glass-card p-12 rounded-3xl space-y-6">
-            <h2 className="text-4xl font-bold text-foreground">Who We Are</h2>
+            <h2 className="text-4xl font-bold glow-cyan">Who We Are</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               OpenStrategyAI is a team of seasoned IT strategists, cloud architects, data scientists and AI engineers. With deep industry experience across finance, retail, manufacturing and professional services, we combine technical depth with business insight.
             </p>
@@ -76,8 +76,8 @@ const About = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto space-y-16">
             <div className="text-center space-y-4">
-              <h2 className="text-4xl md:text-6xl font-bold text-foreground">
-                Our Core <span className="text-primary">Values</span>
+              <h2 className="text-4xl md:text-6xl font-bold">
+                <span className="glow-purple">Our Core Values</span>
               </h2>
               <p className="text-xl text-muted-foreground">
                 The principles that guide everything we do
@@ -89,8 +89,8 @@ const About = () => {
                 const Icon = value.icon;
                 return (
                   <div key={index} className="glass-card p-8 rounded-2xl hover:scale-105 transition-all duration-300 group">
-                    <Icon className="w-12 h-12 mb-4 text-primary transition-transform group-hover:scale-110" />
-                    <h3 className="text-xl font-bold mb-3 text-foreground">{value.title}</h3>
+                    <Icon className="w-12 h-12 mb-4 text-primary group-hover:animate-pulse-glow" />
+                    <h3 className="text-xl font-bold mb-3 glow-cyan">{value.title}</h3>
                     <p className="text-muted-foreground text-sm">{value.description}</p>
                   </div>
                 );
@@ -104,14 +104,14 @@ const About = () => {
       <section className="relative py-24 overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto glass-card p-12 rounded-3xl space-y-6">
-            <h2 className="text-4xl font-bold text-foreground">Our Approach</h2>
+            <h2 className="text-4xl font-bold glow-purple">Our Approach</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               From initial discovery through roadmap development, deployment and optimisation — we deliver end-to-end. We act as your strategic partner, aligning technology with business ambition and turning ideas into impact.
             </p>
             <div className="grid md:grid-cols-4 gap-4 pt-6">
               {["Discovery", "Roadmap", "Deployment", "Optimisation"].map((phase, i) => (
                 <div key={i} className="text-center p-4 glass-card rounded-xl">
-                  <div className="text-2xl font-bold text-primary mb-2">{i + 1}</div>
+                  <div className="text-2xl font-bold glow-cyan mb-2">{i + 1}</div>
                   <div className="text-sm text-muted-foreground">{phase}</div>
                 </div>
               ))}

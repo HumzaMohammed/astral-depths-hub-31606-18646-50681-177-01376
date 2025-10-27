@@ -89,7 +89,7 @@ All colors MUST be HSL.
     background: hsl(var(--glass-bg) / 0.4);
     backdrop-filter: blur(20px);
     border: var(--glass-border);
-    box-shadow: 0 8px 32px hsl(0 0% 0% / 0.5);
+    box-shadow: 0 8px 32px hsl(0 0% 0% / 0.5), var(--mesh-shadow);
   }
   
   .glow-cyan {

@@ -63,18 +63,18 @@ const Clients = () => {
                       </div>
                       <div className="flex-1">
                         <div className="text-sm text-primary font-semibold mb-2">{study.industry}</div>
-                        <CardTitle className="text-3xl mb-3 text-foreground">{study.title}</CardTitle>
+                        <CardTitle className="text-3xl mb-3 glow-cyan">{study.title}</CardTitle>
                         <CardDescription className="text-base">{study.challenge}</CardDescription>
                       </div>
                     </div>
                   </CardHeader>
                   <CardContent className="space-y-6">
                     <div>
-                      <h4 className="font-bold text-lg mb-3 text-foreground">Solution</h4>
+                      <h4 className="font-bold text-lg mb-3 glow-purple">Solution</h4>
                       <p className="text-muted-foreground">{study.solution}</p>
                     </div>
                     <div>
-                      <h4 className="font-bold text-lg mb-3 text-foreground">Results</h4>
+                      <h4 className="font-bold text-lg mb-3 glow-cyan">Results</h4>
                       <div className="grid md:grid-cols-2 gap-4">
                         {study.results.map((result, i) => (
                           <div key={i} className="flex items-start gap-3 glass-card p-4 rounded-xl">
@@ -113,7 +113,7 @@ const Clients = () => {
       <section className="relative py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center space-y-12">
-            <h3 className="text-3xl font-bold text-foreground">Trusted by Industry Leaders</h3>
+            <h3 className="text-3xl font-bold glow-cyan">Trusted by Industry Leaders</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 opacity-50">
               {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
                 <div key={i} className="glass-card p-6 rounded-xl flex items-center justify-center aspect-square">
@@ -129,21 +129,21 @@ const Clients = () => {
       <section className="relative py-24 overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto glass-card p-12 rounded-3xl text-center space-y-8">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-              Ready to Write
+            <h2 className="text-4xl md:text-5xl font-bold">
+              <span className="glow-cyan">Ready to Write</span>
               <br />
-              Your <span className="text-primary">Success Story?</span>
+              <span className="glow-purple">Your Success Story?</span>
             </h2>
             <p className="text-xl text-muted-foreground">
               Request detailed case studies or discuss how we can achieve similar results for your organisation
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="default" size="lg" className="text-base group">
+              <Button variant="neon" size="lg" className="text-base group">
                 Download Case Study Pack
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Link to="/contact">
-                <Button variant="outline" size="lg" className="text-base">
+                <Button variant="glow" size="lg" className="text-base">
                   Contact Us
                 </Button>
               </Link>

@@ -38,8 +38,8 @@ export const ServicesSection = () => {
     <section className="relative py-32 overflow-hidden">
       <div className="container mx-auto px-4 z-10 relative">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-6xl font-bold mb-4 text-foreground">
-            Our <span className="text-primary">Services</span>
+          <h2 className="text-4xl md:text-6xl font-bold mb-4">
+            <span className="glow-cyan">Our</span> <span className="glow-purple">Services</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Comprehensive AI solutions tailored to your business objectives
@@ -56,11 +56,11 @@ export const ServicesSection = () => {
                 style={{ animationDelay: `${i * 0.1}s` }}
               >
                 <div className="mb-6">
-                  <div className="w-14 h-14 rounded-xl border border-border/30 flex items-center justify-center bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                  <div className="w-14 h-14 rounded-xl neon-border-cyan flex items-center justify-center bg-primary/10 group-hover:bg-primary/20 transition-colors">
                     <Icon className="w-7 h-7 text-primary" />
                   </div>
                 </div>
-                <h3 className="text-2xl font-bold mb-3 text-foreground transition-all">
+                <h3 className="text-2xl font-bold mb-3 group-hover:glow-cyan transition-all">
                   {service.title}
                 </h3>
                 <p className="text-muted-foreground">{service.description}</p>
