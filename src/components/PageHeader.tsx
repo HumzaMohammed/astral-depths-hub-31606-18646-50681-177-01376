@@ -80,7 +80,7 @@ export const PageHeader = () => {
               lineHeight: '1.1' 
             }}
           >
-            <span className="glow-cyan">{config.title}</span>
+            <span className="text-foreground">{config.title}</span>
           </h1>
           <p 
             className="text-muted-foreground max-w-3xl mx-auto" 

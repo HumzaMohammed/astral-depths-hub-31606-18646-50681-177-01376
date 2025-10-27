@@ -40,7 +40,7 @@ const Blog = () => {
                       <span className="text-muted-foreground">{post.readTime}</span>
                     </div>
                     <div className="text-xs font-semibold text-secondary mb-2">{post.category}</div>
-                    <CardTitle className="text-xl glow-cyan group-hover:glow-purple transition-all">
+                    <CardTitle className="text-xl text-foreground transition-all">
                       {post.title}
                     </CardTitle>
                     <CardDescription className="text-sm">
@@ -70,7 +70,7 @@ const Blog = () => {
       <section className="relative py-24">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto glass-card p-12 rounded-3xl text-center space-y-6">
-            <h2 className="text-4xl font-bold glow-purple">Stay Updated</h2>
+            <h2 className="text-4xl font-bold text-foreground">Stay Updated</h2>
             <p className="text-xl text-muted-foreground">
               Subscribe to receive our latest insights, case studies and technology trends
             </p>
@@ -95,7 +95,7 @@ const Blog = () => {
       <section className="relative py-24 overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold glow-cyan text-center mb-8">Browse by Category</h3>
+            <h3 className="text-2xl font-bold text-foreground text-center mb-8">Browse by Category</h3>
             <div className="flex flex-wrap gap-3 justify-center">
               {["AI & Machine Learning", "Cloud Infrastructure", "Cybersecurity", "Data & Analytics", "Emerging Technologies", "IT Strategy"].map((category, i) => (
                 <Button key={i} variant="outline" className="glass-card">
