@@ -60,7 +60,7 @@ export const PageHeader = () => {
       }}
     >
       <div 
-        className="relative mx-auto max-w-6xl border border-border/30"
+        className="relative mx-auto max-w-6xl neon-border-cyan"
         style={{
           marginTop: 'clamp(4rem, 8vh, 6rem)',
           clipPath: 'polygon(5% 0%, 95% 0%, 90% 100%, 10% 100%)',
@@ -80,7 +80,7 @@ export const PageHeader = () => {
               lineHeight: '1.1' 
             }}
           >
-            <span className="text-foreground">{config.title}</span>
+            <span className="glow-cyan">{config.title}</span>
           </h1>
           <p 
             className="text-muted-foreground max-w-3xl mx-auto" 
