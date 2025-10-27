@@ -60,7 +60,7 @@ export const PageHeader = () => {
       }}
     >
       <div 
-        className="relative mx-auto max-w-6xl neon-border-cyan"
+        className="relative mx-auto max-w-6xl border border-border/30"
         style={{
           marginTop: 'clamp(4rem, 8vh, 6rem)',
           clipPath: 'polygon(5% 0%, 95% 0%, 90% 100%, 10% 100%)',

@@ -80,7 +80,7 @@ const Blog = () => {
                 placeholder="Enter your email"
                 className="flex h-12 w-full rounded-xl border border-border/30 bg-background/50 px-4 py-2 text-sm backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-primary"
               />
-              <Button variant="neon" size="lg">
+              <Button variant="default" size="lg">
                 Subscribe
               </Button>
             </div>

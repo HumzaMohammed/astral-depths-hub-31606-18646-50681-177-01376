@@ -138,12 +138,12 @@ const Clients = () => {
               Request detailed case studies or discuss how we can achieve similar results for your organisation
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="neon" size="lg" className="text-base group">
+              <Button variant="default" size="lg" className="text-base group">
                 Download Case Study Pack
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Link to="/contact">
-                <Button variant="glow" size="lg" className="text-base">
+                <Button variant="outline" size="lg" className="text-base">
                   Contact Us
                 </Button>
               </Link>

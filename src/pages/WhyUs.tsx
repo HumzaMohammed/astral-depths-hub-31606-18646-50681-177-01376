@@ -128,13 +128,13 @@ const WhyUs = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/services">
-                <Button variant="glow" size="lg" className="text-base group">
+                <Button variant="outline" size="lg" className="text-base group">
                   Explore Our Services
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
               <Link to="/contact">
-                <Button variant="neon" size="lg" className="text-base">
+                <Button variant="default" size="lg" className="text-base">
                   Contact Us
                 </Button>
               </Link>

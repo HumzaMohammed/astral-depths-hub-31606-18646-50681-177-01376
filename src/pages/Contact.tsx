@@ -182,7 +182,7 @@ const Contact = () => {
                       />
                     </div>
 
-                    <Button type="submit" variant="neon" size="lg" className="w-full text-base">
+                    <Button type="submit" variant="default" size="lg" className="w-full text-base">
                       <Send className="w-5 h-5" />
                       Send Message
                     </Button>

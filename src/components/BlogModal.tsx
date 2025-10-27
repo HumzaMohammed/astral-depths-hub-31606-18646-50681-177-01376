@@ -134,7 +134,7 @@ export const BlogModal = ({ post, isOpen, onClose }: BlogModalProps) => {
                 <p className="text-muted-foreground">
                   OpenStrategyAI can help you implement these strategies in your organization.
                 </p>
-                <Button variant="neon" size="lg" onClick={onClose}>
+                <Button variant="default" size="lg" onClick={onClose}>
                   Get in Touch
                 </Button>
               </div>

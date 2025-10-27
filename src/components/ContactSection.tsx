@@ -19,12 +19,12 @@ export const ContactSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button variant="neon" size="lg" className="text-base group">
+              <Button variant="default" size="lg" className="text-base group">
                 <Mail className="w-5 h-5" />
                 Contact Sales
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="glow" size="lg" className="text-base group">
+              <Button variant="outline" size="lg" className="text-base group">
                 <MessageSquare className="w-5 h-5" />
                 Schedule Demo
               </Button>

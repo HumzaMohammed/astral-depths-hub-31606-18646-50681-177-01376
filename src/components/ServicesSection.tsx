@@ -56,7 +56,7 @@ export const ServicesSection = () => {
                 style={{ animationDelay: `${i * 0.1}s` }}
               >
                 <div className="mb-6">
-                  <div className="w-14 h-14 rounded-xl neon-border-cyan flex items-center justify-center bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                  <div className="w-14 h-14 rounded-xl border border-border/30 flex items-center justify-center bg-primary/10 group-hover:bg-primary/20 transition-colors">
                     <Icon className="w-7 h-7 text-primary" />
                   </div>
                 </div>
